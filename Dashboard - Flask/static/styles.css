@@ -1,0 +1,33 @@
+/* Styles for Heading Section */
+.heading {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Styles for Navigation and Main Body Section */
+.container {
+    display: flex;
+    height: calc(100vh - 40px); /* Adjust based on the height of the heading */
+}
+
+/* Styles for Navigation Section */
+.navigation {
+    width: 20%;
+    border-right: 1px solid #ccc;
+}
+
+/* Styles for Main Body Section */
+.main-body {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Styles for Charts */
+.chart {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}

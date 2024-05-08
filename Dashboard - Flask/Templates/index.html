@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Interactive Dashboard</h1>
+    </div>
+    <div id="container">
+        <div id="navigation">
+            <h2>Navigation</h2>
+            <label for="countryFilter">Select Country:</label>
+            <select id="countryFilter">
+                <option value="">All</option>
+            </select>
+            <label for="regionFilter">Select Region:</label>
+            <select id="regionFilter">
+                <option value="">All</option>
+            </select>
+            <label for="cityFilter">Select City:</label>
+            <select id="cityFilter">
+                <option value="">All</option>
+            </select>
+            <ul>
+                <li><a href="#" id="yearLink">Year</a></li>
+                <li><a href="#" id="topicsLink">Topics</a></li>
+                <li><a href="#" id="sectorLink">Sector</a></li>
+                <li><a href="#" id="sourceLink">Source</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="yearChart" class="chart"></div>
+            <div id="topicsChart" class="chart"></div>
+            <div id="sectorChart" class="chart"></div>
+            <div id="sourceChart" class="chart"></div>
+        </div>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
